@@ -1,0 +1,532 @@
+@import "normalizes.scss";
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: local("Gilroy-Medium");
+  src: url(../fonts/Gilroy-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: local("Gilroy-Bold");
+  src: url(../fonts/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
+
+$grey-color: #828282;
+$black-color: #070707;
+$smoky-white-color: #f6f6f6;
+$white-color: #ffffff;
+
+* {
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+.container {
+  max-width: 943.61px;
+  margin: 0 auto;
+}
+
+.nav-menu {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 155.65px;
+    height: 87.94px;
+  }
+
+  &__list-item {
+    font-size: 18px;
+    line-height: 22.28px;
+    color: $grey-color;
+    font-weight: 600;
+  }
+
+  &__list-item:hover {
+    color: $black-color;
+    text-decoration: underline;
+  }
+}
+
+.header {
+  &__nav {
+    width: 100%;
+    border-bottom: 1px solid $grey-color;
+  }
+
+  &__language-toggle {
+    display: none;
+  }
+}
+
+.language {
+  &__list {
+    display: flex;
+    transform-origin: bottom right;
+    transform: translateY(-65px) rotate(-90deg);
+  }
+
+  &__list-item {
+    font-size: 16px;
+    line-height: 19.81px;
+    color: $grey-color;
+    font-weight: 600;
+  }
+
+  &__list-item:hover {
+    color: $black-color;
+  }
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-top: 127.63px;
+  padding-bottom: 30.64px;
+
+  &__title {
+    font-size: 47.34px;
+    line-height: 58.61px;
+    font-weight: 700;
+    color: $black-color;
+  }
+
+  &__text {
+    flex-basis: 155.65px;
+    font-size: 18px;
+    line-height: 21.83px;
+    color: $black-color;
+  }
+}
+
+.photo {
+  padding-bottom: 104.06px;
+
+  &__inner {
+    height: 387px;
+    width: 100%;
+  }
+}
+
+.about {
+  background-color: $smoky-white-color;
+  padding-top: 120.25px;
+  padding-bottom: 107px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17.69px;
+  }
+
+  &__title {
+    font-size: 34px;
+    line-height: 42.09px;
+    font-weight: 600;
+    color: $black-color;
+  }
+
+  &__text {
+    width: 485.34px;
+    font-size: 18px;
+    line-height: 21.83px;
+    color: $black-color;
+    text-align: center;
+  }
+}
+
+.skills {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 91px;
+    padding-bottom: 111px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 34px;
+    line-height: 42.09px;
+    color: $black-color;
+    font-weight: 600;
+    margin-bottom: 69.1px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 21.83px;
+    margin-bottom: 83.49px;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: center;
+    gap: 90.25px;
+  }
+
+  &__program {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 206.29px;
+  }
+
+  &__program:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  &__program-picture:first-child {
+    width: 81.67px;
+    height: 80.85px;
+  }
+
+  &__program-picture:nth-child(2) {
+    width: 89.21px;
+    height: 88.57px;
+  }
+
+  &__program-picture:nth-child(3) {
+    width: 89.21px;
+    height: 88.57px;
+  }
+
+  &__program-picture:last-child {
+    width: 58.25px;
+    height: 88.99px;
+  }
+
+  &__program-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17.33px;
+    color: $grey-color;
+    text-align: center;
+  }
+
+  &__program-stars {
+    display: flex;
+    gap: 9.02px;
+    justify-content: space-between;
+  }
+
+  &__program-star {
+  }
+}
+
+.portfolio {
+  background-color: $smoky-white-color;
+  padding-top: 112.93px;
+  padding-bottom: 96.07px;
+
+  &__title {
+    font-size: 34px;
+    line-height: 34px;
+    font-weight: 600;
+    color: $black-color;
+    text-align: center;
+    margin-bottom: 47px;
+  }
+
+  &__fashion-store {
+    background: url(../assets/fashion-store.png);
+    height: 510px;
+    background-size: cover;
+    margin-bottom: 44.88px;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 21.83px;
+    color: $black-color;
+    text-align: center;
+    margin-bottom: 99.08px;
+  }
+
+  &__link:last-child {
+    margin-bottom: 0;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+
+  &__reebok {
+    background: url(../assets/reebok.png);
+    background-size: cover;
+    height: 522px;
+    margin-bottom: 44.89px;
+  }
+
+  &__braun {
+    background: url(../assets/braun.png);
+    background-size: cover;
+    height: 522px;
+    margin-bottom: 45.9px;
+  }
+}
+
+.footer {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 114.24px;
+    padding-bottom: 123.19px;
+  }
+
+  &__title {
+    font-size: 34px;
+    line-height: 42.09px;
+    font-weight: 600;
+    color: $black-color;
+    margin-bottom: 20.03px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 21.83px;
+    margin-bottom: 29.6px;
+  }
+
+  &__button {
+    background-color: $black-color;
+    color: $white-color;
+    font-size: 18px;
+    line-height: 22.28px;
+    padding: 9px 22px;
+    width: fit-content;
+    border-radius: 20px;
+    margin-bottom: 91px;
+    border: 2px solid transparent;
+  }
+
+  &__button:hover {
+    background-color: $smoky-white-color;
+    color: $black-color;
+    font-weight: 600;
+    border: 2px solid $black-color;
+    box-sizing: border-box;
+  }
+
+  &__social-text {
+    color: #828282;
+    font-size: 14px;
+    line-height: 16.98px;
+    margin-top: 45.76px;
+    text-align: center;
+  }
+}
+
+.social {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 75px;
+  }
+
+  &__list-item:hover {
+    transform: scale(1.3, 1.3);
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+
+  .nav-menu {
+    &__list {
+      gap: 70px;
+    }
+  }
+
+  .photo {
+    &__inner {
+      padding-bottom: 0px;
+    }
+
+    &__inner img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+
+  .nav-menu {
+    &__list-item {
+      font-size: 14px;
+    }
+  }
+
+  .photo {
+    &__inner {
+      padding-bottom: 0px;
+    }
+
+    &__inner img {
+      height: 100%;
+    }
+  }
+
+  .skills {
+    &__group {
+      flex-wrap: wrap;
+    }
+
+    &__program {
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 316.5px;
+    padding-left: 29px;
+    padding-right: 30px;
+  }
+
+  .header {
+    &__underline {
+      display: none;
+    }
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .home {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 23px;
+    padding-top: 65px;
+    padding-bottom: 36.94px;
+
+    &__title {
+      line-height: 58.19px;
+    }
+
+    &__language-toggle {
+      display: none;
+    }
+  }
+
+  .photo {
+    &__inner {
+      width: 100%;
+      height: 478px;
+    }
+    &__inner img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .about {
+    padding-top: 81px;
+    padding-bottom: 76px;
+
+    &__inner {
+      gap: 20px;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
+
+  .skills {
+    &__inner {
+      padding-top: 83px;
+      padding-bottom: 98.73px;
+    }
+    &__group {
+      flex-direction: column;
+      gap: 81px;
+    }
+  }
+
+  .portfolio {
+    &__inner {
+      padding-top: 81px;
+      padding-bottom: 80.97px;
+    }
+
+    &__title {
+      margin-bottom: 64.94px;
+    }
+
+    &__fashion-store {
+      background-image: url(../assets/fashion-store_575.png);
+      margin-bottom: 33px;
+      width: 316px;
+      height: 171px;
+    }
+
+    &__reebok {
+      background-image: url(../assets/reebok_575.png);
+      margin-bottom: 35px;
+      width: 316px;
+      height: 176px;
+    }
+
+    &__braun {
+      background-image: url(../assets/braun_575.png);
+      margin-bottom: 35px;
+      width: 316px;
+      height: 176px;
+    }
+
+    &__link {
+      margin-bottom: 77.97px;
+    }
+  }
+
+  .footer {
+    &__inner {
+      padding-top: 82px;
+      padding-bottom: 90px;
+      padding-left: 29px;
+      padding-right: 30px;
+    }
+
+    &__title {
+      margin-bottom: 27.03px;
+    }
+
+    &__text {
+      margin-bottom: 51.84px;
+    }
+
+    &__button {
+      width: 100%;
+      margin-bottom: 48.22px;
+    }
+
+    &__social-list {
+      gap: 51px;
+      padding-left: 29px;
+      padding-right: 30px;
+    }
+
+    &__social-icons {
+      margin-bottom: 49px;
+      gap: 51px;
+    }
+  }
+}
